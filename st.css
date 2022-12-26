@@ -92,6 +92,7 @@
     display: flex;
     background: url('images/banner.png')no-repeat center;
     height: 100vh;
+    background-position: 100%;
     background-attachment: fixed;
     background-size: cover;
     color: #fff;
