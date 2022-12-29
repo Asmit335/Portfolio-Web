@@ -189,7 +189,8 @@ section {
     padding: 100px 0;
 }
 
-.about {
+.about,
+.services {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -294,6 +295,52 @@ margin-right: 110px;
     background: none;
 }
 
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-links::after {
+    width: 50%;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents ul li {
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: crimson;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
 
 /* responsiveness of about section */
 
@@ -318,3 +365,6 @@ margin-right: 110px;
         flex: 100%;
     }
 }
+
+
+/* services section stylling */

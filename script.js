@@ -1,3 +1,4 @@
+// navbar js
 $(document).ready(function() {
     $(window).scroll(function() {
         if (this.scrollY > 20) {
@@ -15,3 +16,19 @@ $(document).ready(function() {
 
 
 });
+
+// about section click js
+
+let tablinks = document.getElementsByClassName("tab-links");
+let tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname) {
+    for (tablink of tablinks) {
+        tablink.classList.remove("active-links")
+    }
+    for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab")
+    }
+    event.currentTarget.classList.add("active-links");
+    document.getElementById(tabname).classList.add("active-tab")
+}
