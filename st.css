@@ -375,6 +375,7 @@ margin-right: 110px;
 /* services section stylling */
 
 #services {
+    /* min-width: 100%; */
     padding: 30px 0;
     margin: 0 50px;
 }
@@ -392,9 +393,42 @@ margin-right: 110px;
     font-size: 13px;
     font-weight: 300;
     border-radius: 12px;
+    transition: background .5s, transform .5s;
+}
+
+.services-list div:hover {
+    background: #ff004f;
+    transform: translateY(-10px);
 }
 
 .services-list div i {
     font-size: 50px;
     margin-bottom: 30px;
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    display: inline-block;
+    transition: .3 ease;
+}
+
+.services-list div a:hover {
+    color: crimson;
+}
+
+
+/* my work section */
+
+#portfolio {
+    padding: 20px 50px;
 }
