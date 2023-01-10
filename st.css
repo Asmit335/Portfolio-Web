@@ -280,6 +280,10 @@ margin-right: 110px;
     text-align: justify;
 }
 
+.para p {
+    padding-right: 30px;
+}
+
 .about .about-content .column-right a {
     display: inline-block;
     background-color: crimson;
