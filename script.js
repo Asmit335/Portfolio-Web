@@ -17,6 +17,28 @@ $(document).ready(function() {
 
 });
 
+// darkmode js
+let inputE1 = document.querySelector(".input")
+    // let labelE1 = document.querySelector(".label")
+    // let circleE1 = document.querySelector(".circle")
+let bodyE1 = document.querySelector("body")
+
+inputE1.checked = false;
+updateBody();
+
+function updateBody() {
+    if (inputE1.checked) {
+        bodyE1.style.background = "#111";
+        bodyE1.style.color = "#fff";
+    } else {
+        bodyE1.style.background = "#fff";
+    }
+}
+
+inputE1.addEventListener("input", () => {
+    updateBody();
+})
+
 // auto-text Animation JS
 const containerE1 = document.querySelector(".home-content span");
 const careers = ["a Youtuber.", "a Web Developer.", "a FreeLancer.", "an Instructor."];
