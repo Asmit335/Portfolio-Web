@@ -21,6 +21,7 @@ $(document).ready(function() {
 let inputE1 = document.querySelector(".input")
     // let labelE1 = document.querySelector(".label")
     // let circleE1 = document.querySelector(".circle")
+
 let bodyE1 = document.querySelector("body")
 
 inputE1.checked = false;

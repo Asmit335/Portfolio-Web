@@ -310,6 +310,10 @@ section {
     width: 55%;
 }
 
+.about .column-right .para p {
+    padding-right: 70px;
+}
+
 .about .about-content .column-right .text {
     font-size: 25px;
     font-weight: 600;
@@ -332,9 +336,10 @@ margin-right: 110px;
     text-align: justify;
 }
 
-.para p {
+
+/* .para p {
     padding-right: 30px;
-}
+} */
 
 .about .about-content .column-right a {
     display: inline-block;
