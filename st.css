@@ -695,3 +695,26 @@ form textarea {
 .copy i {
     color: #ff004f;
 }
+
+
+/* responsive of contact form  */
+
+@media (max-width:625px) {
+    .contact-right {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .contact-left {
+        text-align: center;
+    }
+    .btn1 {
+        display: inline-block;
+        text-align: center;
+        justify-content: center;
+        justify-content: center;
+        /* background-color: #ac0a3d; */
+        align-items: center;
+        /* border: 1px solid yellow; */
+    }
+}
