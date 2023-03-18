@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: #262626;
+        margin-top: 60px;
+    }
+    
+    form {
+        color: #fff;
+        font-size: 1.5rem;
+        max-width: 500px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    
+    .btn {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+<body>
+    <form name="submit-to-google-sheet" method="post" action="submit-form.php">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="Email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate" name="birthdate" required><br>
+
+        <label for="interests">Interests:</label>
+        <textarea id="interests" name="interests"></textarea>
+        <div class="btn">
+            <input class="sign" type="submit" value="Sign Up">
+        </div>
+    </form>
+
+</body>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwYxPsCfMxp3oTQ8m1RiqdQ-dfYIAC6cRd77US7p9eyP3nWOCp2EpWV0umXDQ5cIrAy/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+            .then(response => {
+                msg.innerHTML = "Loading...."
+                setTimeout(function() {
+                    msg.innerHTML = ""
+                }, 3000)
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+
+
+    const form1 = document.forms.submit - to - google - sheet;
+
+    form.addEventListener("submit", (event) => {
+        event.preventDefault(); // prevent the default form submission behavior
+        window.location.href = "index.html"; // redirect to the index.html page
+    });
+</script>
+
+</html>
