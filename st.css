@@ -596,10 +596,19 @@ margin-right: 110px;
 
 /* contact form */
 
+
+/* .contaner1 {
+    justify-content: space-between;
+} */
+
 .contact-left {
     flex-basis: 35%;
     margin: 0 3rem;
     padding-bottom: 2rem;
+}
+
+.contact-right {
+    flex-basis: 60%;
 }
 
 .contact-left .sub-title {
@@ -608,10 +617,6 @@ margin-right: 110px;
 
 .contact-left p {
     font-size: 1.5rem;
-}
-
-.contact-right {
-    flex-basis: 60%;
 }
 
 .contact-left p {
@@ -717,4 +722,16 @@ form textarea {
         align-items: center;
         /* border: 1px solid yellow; */
     }
+}
+
+
+/* messgage successfull console */
+
+#msg {
+    color: #ac0a3d;
+    margin: 20px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: cursive;
+    display: block;
 }
