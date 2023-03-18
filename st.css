@@ -8,6 +8,10 @@
     /* overflow: auto; */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: rgb(8, 2, 2);
     color: #fff;
@@ -567,4 +571,127 @@ margin-right: 110px;
     border-radius: 5px;
     color: #fff;
     transition: all 0.5s ease;
+}
+
+.seemore {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+    /* background-color: #ac0a3d; */
+    border: 2px solid #ff004f;
+    border-radius: 6px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: babackground .5s;
+}
+
+.seemore:hover {
+    background: #ff004f;
+}
+
+
+/* contact form */
+
+.contact-left {
+    flex-basis: 35%;
+    margin: 0 3rem;
+    padding-bottom: 2rem;
+}
+
+.contact-left .sub-title {
+    font-size: 2.5rem;
+}
+
+.contact-left p {
+    font-size: 1.5rem;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p {
+    margin-top: 10px;
+}
+
+.contact-left p i {
+    color: crimson;
+}
+
+.social-icon {
+    margin-top: 15px;
+}
+
+.social-icon a {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+    transition: transform 0.5s;
+}
+
+.social-icon a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 50%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 15px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.btn1 {
+    display: block;
+    width: fit-content;
+    margin: 0px 10px;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+    background: #262626;
+    border: 2px solid #ff004f;
+    border-radius: 6px;
+    cursor: pointer;
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    transition: all ease .3s;
+}
+
+.btn1:hover {
+    color: #fff;
+    background-color: #ff004f;
+    transform: translateX(5px);
+}
+
+
+/* copyright */
+
+.copy {
+    width: 100%;
+    background-color: #262626;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    padding: 25px 0;
+}
+
+.copy i {
+    color: #ff004f;
 }
