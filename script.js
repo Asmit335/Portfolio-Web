@@ -82,12 +82,12 @@ function opentab(tabname) {
 // contact form fetching details in google sheet .
 
 
-// const scriptURL = 'https://script.google.com/macros/s/AKfycbwYxPsCfMxp3oTQ8m1RiqdQ-dfYIAC6cRd77US7p9eyP3nWOCp2EpWV0umXDQ5cIrAy/exec'
-// const form = document.forms['submit-to-google-sheet']
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwYxPsCfMxp3oTQ8m1RiqdQ-dfYIAC6cRd77US7p9eyP3nWOCp2EpWV0umXDQ5cIrAy/exec'
+const form = document.forms['submit-to-google-sheet']
 
-// form.addEventListener('submit', e => {
-//     e.preventDefault()
-//     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-//         .then(response => console.log('Success!', response))
-//         .catch(error => console.error('Error!', error.message))
-// })
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+})
