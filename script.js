@@ -40,27 +40,27 @@
 //     updateBody();
 // })
 
-// auto-text Animation JS
-const containerE1 = document.querySelector(".home-content span");
-const careers = ["a Youtuber.", "a Web Developer.", "a FreeLancer.", "an Instructor."];
-let careersIndex = 2;
-let characterIndex = 0;
+// // auto-text Animation JS
+// const containerE1 = document.querySelector(".home-content span");
+// const careers = ["a Youtuber.", "a Web Developer.", "a FreeLancer.", "an Instructor."];
+// let careersIndex = 2;
+// let characterIndex = 0;
 
-updateText();
+// updateText();
 
-function updateText() {
-    characterIndex++;
-    containerE1.innerHTML = `<span>${careers[careersIndex].slice(0,characterIndex)}</span>`
-    if (characterIndex === careers[careersIndex].length) {
-        careersIndex++;
-        characterIndex = 0;
-    }
-    if (careersIndex === careers.length) {
-        careersIndex = 0;
-    }
-    setTimeout(updateText, 300);
+// function updateText() {
+//     characterIndex++;
+//     containerE1.innerHTML = `<span>${careers[careersIndex].slice(0,characterIndex)}</span>`
+//     if (characterIndex === careers[careersIndex].length) {
+//         careersIndex++;
+//         characterIndex = 0;
+//     }
+//     if (careersIndex === careers.length) {
+//         careersIndex = 0;
+//     }
+//     setTimeout(updateText, 300);
 
-}
+// }
 
 // about section click js
 
